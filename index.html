@@ -16,13 +16,15 @@
       </div>
       <div class="row" style="padding-top: 100px;">
         <div class="col-3 p-2 border bg-light">
-          <select id="qty1" onchange="quantityChange(event)" class="form-control">
+          <label id="unit" for="unit">Please Select Unit</label>
+          <select id="qty1" onchange="quantityChange(event)" class="form-control"  aria-label="Please select Unit">
             <option value="kg">Kg</option>
             <option value="km">Km</option>
             <option value="farenheit">Farenheit</option>
           </select>
         </div>
         <div class="col p-2 border bg-light">
+          <label id="unit" for="unit">Change Quantity</label>
           <input type="text" value="" id="val1" onkeyup="updateValue(event.target.value)" class="form-control" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
         </div>
       </div>
